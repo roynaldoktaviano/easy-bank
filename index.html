@@ -17,19 +17,21 @@
 </head>
 <body>
   <header class="header">
-    <div class="overlay"></div>
-      <nav class="flex flex-jc-sb flex-ai-c">
+    <div class="overlay fade-element"></div>
+      <nav class="flex flex-jc-sb flex-ai-c container">
       <a href="/" class="header-menu-logo flex flex-ai-c">
         <img src="images/logo.svg" alt="Easybank" />
       </a>
-
+      <!-- START : Hamburger Icon -->
       <a href="#" class="header-menu-hamburger hide-desktop">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
       </a>
+      <!-- END : Hamburger Icon -->
 
+      <!-- START : Navbar Menu -->
       <div class="header-link-menu hide-mobile">
         <a href="#">Home</a>
         <a href="#">About</a>
@@ -37,9 +39,19 @@
         <a href="#">Blog</a>
         <a href="#">Careers</a>
       </div>
-
+      <!-- END: Navbar Menu -->
       <button type="button" class="header-cta hide-mobile">Request Invite</button>
     </nav>
+
+    <!-- START : Mobile Menu -->
+    <div class="header-mobile-menu fade-element">
+      <a href="http://">Home</a>
+      <a href="http://">About</a>
+      <a href="http://">Contact</a>
+      <a href="http://">Blog</a>
+      <a href="http://">Careers</a>
+    </div>
+    <!-- END : Mobile Menu -->
   </header>
 
 

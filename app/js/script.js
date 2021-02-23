@@ -1,15 +1,24 @@
-let hamburger = document.querySelector(".header-menu-hamburger");
+const body = document.querySelector("body");
+const hamburger = document.querySelector(".header-menu-hamburger");
 const header = document.querySelector(".header");
 const overlay = document.querySelector(".overlay");
+const fadeElem = document.querySelectorAll(".fade-element");
 
 hamburger.addEventListener("click", function(){
     if(header.classList.contains('open')){ // Close Hamburger
         header.classList.remove("open");
-        overlay.classList.remove("fade-in")
-        overlay.classList.add("fade-out");
+        body.classList.remove("no-scroll");
+        fadeElem.forEach(function(element){
+            element.classList.remove("fade-in")
+            element.classList.add("fade-out");
+        });
+        
     } else { //Open Hamburger
         header.classList.add("open");
-        overlay.classList.remove("fade-out");
-        overlay.classList.add("fade-in");
+        body.classList.add("no-scroll");
+        fadeElem.forEach(function(element){
+            element.classList.remove("fade-out");
+            element.classList.add("fade-in");
+        });
     }
 })
