@@ -5,6 +5,7 @@
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
         background: white;
+        z-index: 97;
     }
 
     &-menu-logo{
@@ -20,6 +21,7 @@
         left: 0;
         bottom: 0;
         background-image: linear-gradient($darkBlue, transparent);
+        z-index: 95;
     }
 
     &.open {
@@ -108,6 +110,7 @@
         padding: 1.625rem;
         text-align: center;
         border-radius: 5px;
+        z-index: 96;
         a{
             display: block;
             color: $darkBlue;

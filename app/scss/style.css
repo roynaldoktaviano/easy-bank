@@ -96,8 +96,18 @@ body.no-scroll {
   overflow: hidden;
 }
 
+h1, h2, h3, h4 {
+  margin-top: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
 .container {
+  padding-top: 2.656rem;
   padding-left: 1.5rem;
+  padding-bottom: 2.656rem;
   padding-right: 1.5rem;
 }
 
@@ -165,6 +175,7 @@ button:hover, .button:hover {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   background: white;
+  z-index: 97;
 }
 
 .header-menu-logo img {
@@ -179,6 +190,7 @@ button:hover, .button:hover {
   bottom: 0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#2d314d), to(transparent));
   background-image: linear-gradient(#2d314d, transparent);
+  z-index: 95;
 }
 
 .header.open .header-menu-hamburger > span:first-child {
@@ -271,6 +283,7 @@ button:hover, .button:hover {
   padding: 1.625rem;
   text-align: center;
   border-radius: 5px;
+  z-index: 96;
 }
 
 .header-mobile-menu a {
@@ -283,10 +296,38 @@ button:hover, .button:hover {
   text-align: center;
 }
 
+.hero-image {
+  position: relative;
+  background-image: url(/images/bg-intro-mobile.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 16.1rem;
+}
+
+.hero-image::before {
+  content: "";
+  background-image: url(/images/image-mockups.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  width: 92%;
+  height: 100%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
 .hero-text h1 {
   font-weight: 300;
   color: #2d314d;
-  font-size: 37px;
+  font-size: 2.1875rem;
   line-height: 1.2;
+  margin-bottom: 1.4375rem;
+}
+
+.hero-text p {
+  font-size: 0.75rem;
+  margin-bottom: 2.1875rem;
 }
 /*# sourceMappingURL=style.css.map */

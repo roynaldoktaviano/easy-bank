@@ -20,8 +20,18 @@ body {
     }
 }
 
+h1,h2,h3,h4 {
+    margin-top: 0px;
+}
+
+p {
+    margin: 0px;
+}
+
 .container {
+    padding-top: 2.656rem;
     padding-left: 1.5rem;
+    padding-bottom: 2.656rem;
     padding-right: 1.5rem;
 
 }

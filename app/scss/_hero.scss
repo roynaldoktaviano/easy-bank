@@ -2,15 +2,38 @@
     text-align: center;
 
     &-image{
+        position: relative;
+        background-image: url(/images/bg-intro-mobile.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 16.1rem;
 
+        &::before {
+            content: "";
+            background-image: url(/images/image-mockups.png);
+            position: absolute;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-size: cover;
+            width: 92%;
+            height: 100%;
+            transform: translateX(-50%);
+
+        }
     }
 
     &-text{
         h1 {
             font-weight: 300;
             color: $darkBlue;
-            font-size: 37px;
+            font-size: 2.1875rem;
             line-height: 1.2;
+            margin-bottom: 1.4375rem;
+        }
+        p {
+            font-size: 0.75rem;
+            margin-bottom: 2.1875rem;
         }
     }
 }
