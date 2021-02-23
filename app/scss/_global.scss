@@ -1,0 +1,60 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: 'Public Sans', sans-serif;
+    font-size: $font-md;
+    color: $grayishBlue;
+}
+
+a, a:visited, a:hover {
+    text-decoration: none;
+    color: $grayishBlue;
+}
+
+.flex{
+    display: flex;
+
+    &-jc-sb {
+        justify-content: space-between;
+    }
+
+    &-jc-c {
+        justify-content: center;
+    }
+
+    &-ai-c {
+        align-items: center;
+    }
+}
+
+button , .button {
+    padding: 0.875rem 2.125rem;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(to right, $limeGreen, $brightCyan);
+    cursor: pointer;
+    font-weight: 700;
+    
+}
+
+.hide-mobile {
+    @include breakpoint-down(medium){
+        display: none;
+    }
+}
+
+.hide-desktop {
+    @include breakpoint-up(large){
+        display: none;
+    }
+}
