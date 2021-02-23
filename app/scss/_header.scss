@@ -98,17 +98,6 @@
         }
     }
 
-    &-cta {
-        font-size: $font-sm;
-        color: white;
-
-        transition: 0.15s ease-in-out;
-
-        &:hover {
-            opacity: 0.7;
-        }
-    }
-
     &-mobile-menu {
         position: absolute;
         background: white;

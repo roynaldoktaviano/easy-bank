@@ -1,18 +1,15 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# Avoid accidental Sketch file upload 
+###############################################
+## Please do not remove line 5 - thanks! 🙂 ##
+###############################################
+*.sketch
 
-# Other files and folders
-.settings/
+# Avoid accidental XD or Figma upload if you convert the design file
+#######################################################
+## Please do not remove lines 11 and 12 - thanks! 🙂 ##
+#######################################################
+*.xd
+*.fig
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
-
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# Avoid your project being littered with annoying .DS_Store files!
+.DS_Store

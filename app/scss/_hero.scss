@@ -1,0 +1,16 @@
+.hero {
+    text-align: center;
+
+    &-image{
+
+    }
+
+    &-text{
+        h1 {
+            font-weight: 300;
+            color: $darkBlue;
+            font-size: 37px;
+            line-height: 1.2;
+        }
+    }
+}

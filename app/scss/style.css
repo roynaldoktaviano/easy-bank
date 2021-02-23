@@ -138,6 +138,14 @@ button, .button {
   background: linear-gradient(to right, #31d35c, #2bb7da);
   cursor: pointer;
   font-weight: 700;
+  font-size: 0.875rem;
+  color: white;
+  -webkit-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
+}
+
+button:hover, .button:hover {
+  opacity: 0.7;
 }
 
 @media (max-width: 63.9375em) {
@@ -252,17 +260,6 @@ button, .button {
   opacity: 1;
 }
 
-.header-cta {
-  font-size: 0.875rem;
-  color: white;
-  -webkit-transition: 0.15s ease-in-out;
-  transition: 0.15s ease-in-out;
-}
-
-.header-cta:hover {
-  opacity: 0.7;
-}
-
 .header-mobile-menu {
   position: absolute;
   background: white;
@@ -280,5 +277,16 @@ button, .button {
   display: block;
   color: #2d314d;
   padding: 0.625rem;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-weight: 300;
+  color: #2d314d;
+  font-size: 37px;
+  line-height: 1.2;
 }
 /*# sourceMappingURL=style.css.map */
