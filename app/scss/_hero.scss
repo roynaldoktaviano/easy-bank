@@ -1,5 +1,13 @@
 .hero {
     text-align: center;
+    background-color: $veryLightGray;
+
+    .container {
+        @include breakpoint-up(large){
+            display: flex;
+            align-items: center;
+        }
+    }
 
     &-image{
         position: relative;
@@ -11,6 +19,20 @@
 
         &::before {
             content: "";
+            
+            background-image: url(/images/bg-intro-desktop.svg);
+            position: absolute;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-size: cover;
+            width: 92%;
+            height: 100%;
+            transform: translateX(-50%);
+            
+
+        }
+        &::after {
+            content: "";
             background-image: url(/images/image-mockups.png);
             position: absolute;
             background-repeat: no-repeat;
@@ -19,21 +41,44 @@
             width: 92%;
             height: 100%;
             transform: translateX(-50%);
+        }
 
+        @include breakpoint-up(large){
+            flex: 3;
+            order: 2;
+            height: 41rem;
+            background-image: none;
+            // background-image: url(/images/bg-intro-desktop.svg);
+            // background-position: left center;
         }
     }
 
     &-text{
+        @include breakpoint-up(large){
+            flex: 2;
+            order: 1;
+            text-align: left;
+        }
         h1 {
             font-weight: 300;
             color: $darkBlue;
-            font-size: 2.1875rem;
+            font-size: 2.5rem;
             line-height: 1.2;
             margin-bottom: 1.4375rem;
+
+            @include breakpoint-up(large) {
+                font-size: 3rem;
+            }
         }
         p {
-            font-size: 0.75rem;
+            line-height: 1.5;
+            font-size: 1rem;
             margin-bottom: 2.1875rem;
+
+            @include breakpoint-up(large) {
+                font-size: 1.075rem;
+            }
         }
+        
     }
 }

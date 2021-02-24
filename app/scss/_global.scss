@@ -29,10 +29,37 @@ p {
 }
 
 .container {
-    padding-top: 2.656rem;
-    padding-left: 1.5rem;
-    padding-bottom: 2.656rem;
-    padding-right: 1.5rem;
+    max-width: 69.5625rem;
+    margin: 0 auto;
+
+    // Help Classes for container Padding
+    &-pt {
+        padding-top: 2.656rem;
+    }
+    &-pb {
+        padding-bottom: 2.656rem;
+    }
+    &-pl {
+        padding-left: 1.5rem;
+    }
+    &-pr {
+        padding-right: 1.5rem;
+    }
+    &-px {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    &-py {
+        padding-top: 2.656rem;
+        padding-bottom: 2.656rem;
+    }
+    &-pall {
+        padding-top: 2.656rem;
+        padding-left: 1.5rem;
+        padding-bottom: 2.656rem;
+        padding-right: 1.5rem;
+    }
+    
 
 }
 
