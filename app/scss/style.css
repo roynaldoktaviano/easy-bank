@@ -354,11 +354,17 @@ button:hover, .button:hover {
   position: absolute;
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: cover;
-  width: 92%;
+  background-size: 92%;
+  width: 100%;
   height: 100%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+@media (min-width: 64em) {
+  .hero-image::before {
+    width: 150%;
+  }
 }
 
 .hero-image::after {
@@ -367,8 +373,8 @@ button:hover, .button:hover {
   position: absolute;
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: cover;
-  width: 92%;
+  background-size: 92%;
+  width: 100%;
   height: 100%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
