@@ -28,20 +28,17 @@
         &::before {
 
             @include breakpoint-up(large){
-                
-                width: 170%;
-                transform: translateX(-24%);
+        
+                width: 200%;
+                transform: translateX(-20%);
                 background-position: center 78%;
                 background-size: 112%;
                 content: "";
                 background-image: url(/images/bg-intro-desktop.svg);
                 position: absolute;
                 background-repeat: no-repeat;
-                background-position: center bottom;
-                // background-size: 92%;
-                // width: 100%;
+                background-position: center 64%;
                 height: 100%;
-                // transform: translateX(-50%);
             }
             
 

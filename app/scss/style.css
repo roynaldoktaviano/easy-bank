@@ -356,16 +356,16 @@ button:hover, .button:hover {
 
 @media (min-width: 64em) {
   .hero-image::before {
-    width: 170%;
-    -webkit-transform: translateX(-24%);
-            transform: translateX(-24%);
+    width: 200%;
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
     background-position: center 78%;
     background-size: 112%;
     content: "";
     background-image: url(/images/bg-intro-desktop.svg);
     position: absolute;
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: center 64%;
     height: 100%;
   }
 }
