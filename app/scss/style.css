@@ -383,6 +383,12 @@ button:hover, .button:hover {
           transform: translateX(-50%);
 }
 
+@media (min-width: 40em) {
+  .hero-image::after {
+    background-size: 73%;
+  }
+}
+
 @media (min-width: 64em) {
   .hero-image::after {
     background-position: center 83%;
