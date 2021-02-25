@@ -348,6 +348,19 @@ button:hover, .button:hover {
   min-height: 16.1rem;
 }
 
+.hero-image::before {
+  content: "";
+  background-image: url(/images/bg-intro-desktop.svg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 92%;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
 @media (min-width: 64em) {
   .hero-image::before {
     width: 170%;
