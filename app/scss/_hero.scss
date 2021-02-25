@@ -1,4 +1,5 @@
 .hero {
+    width: 100%;
     text-align: center;
     background-color: $veryLightGray;
 
@@ -26,9 +27,7 @@
         // }
 
         &::before {
-
             @include breakpoint-up(large){
-        
                 width: 200%;
                 transform: translateX(-20%);
                 background-position: center 78%;

@@ -324,6 +324,7 @@ button:hover, .button:hover {
 }
 
 .hero {
+  width: 100%;
   text-align: center;
   background-color: #fafafa;
 }
