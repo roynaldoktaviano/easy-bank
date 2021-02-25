@@ -344,26 +344,17 @@ button:hover, .button:hover {
   background-image: url(/images/bg-intro-mobile.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center 60%;
   min-height: 16.1rem;
-}
-
-.hero-image::before {
-  content: "";
-  background-image: url(/images/bg-intro-desktop.svg);
-  position: absolute;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: 92%;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
 }
 
 @media (min-width: 64em) {
   .hero-image::before {
-    width: 150%;
+    width: 170%;
+    -webkit-transform: translateX(-24%);
+            transform: translateX(-24%);
+    background-position: center 78%;
+    background-size: 112%;
   }
 }
 
@@ -373,11 +364,23 @@ button:hover, .button:hover {
   position: absolute;
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: 92%;
+  background-size: 93%;
   width: 100%;
   height: 100%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+@media (min-width: 64em) {
+  .hero-image::after {
+    background-position: center 83%;
+    background-size: 105%;
+    width: 120%;
+    height: 125%;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    left: 31%;
+  }
 }
 
 @media (min-width: 64em) {
