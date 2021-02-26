@@ -2,6 +2,8 @@
     width: 100%;
     text-align: center;
     background-color: $veryLightGray;
+    // overflow-x: hidden;
+    // overflow-y: visible;
 
     .container {
         @include breakpoint-up(large){
@@ -28,7 +30,7 @@
 
         &::before {
             @include breakpoint-up(large){
-                width: 200%;
+                width: 205%;
                 transform: translateX(-20%);
                 background-position: center 78%;
                 background-size: 112%;

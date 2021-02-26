@@ -357,7 +357,7 @@ button:hover, .button:hover {
 
 @media (min-width: 64em) {
   .hero-image::before {
-    width: 200%;
+    width: 205%;
     -webkit-transform: translateX(-20%);
             transform: translateX(-20%);
     background-position: center 78%;
