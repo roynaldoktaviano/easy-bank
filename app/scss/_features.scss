@@ -1,0 +1,20 @@
+.features{
+    
+    background-color: $veryLightGray;
+    
+    @include breakpoint-up(large){
+        display: flex;
+    }
+    .feature {
+        flex: 1;
+        &-icon{
+
+        }
+        &-title{
+
+        }
+        &-description{
+            
+        }
+    }
+}

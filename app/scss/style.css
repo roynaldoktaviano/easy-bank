@@ -98,6 +98,14 @@ body.no-scroll {
 
 h1, h2, h3, h4 {
   margin-top: 0px;
+  font-weight: 300;
+  color: #2d314d;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+h1, h2 {
+  margin-bottom: 2.1875rem;
 }
 
 p {
@@ -428,11 +436,7 @@ button:hover, .button:hover {
 }
 
 .hero-text h1 {
-  font-weight: 300;
-  color: #2d314d;
   font-size: 2.5rem;
-  line-height: 1.2;
-  margin-bottom: 1.4375rem;
 }
 
 @media (min-width: 64em) {
