@@ -2,6 +2,8 @@
     width: 100%;
     text-align: center;
     background-color: $veryLightGray;
+    // overflow-x: hidden;
+    // overflow-y: unset;
 
     // overflow-x: hidden;
     // overflow-y: visible;
@@ -15,7 +17,7 @@
 
     &-image{
         position: relative;
-        background-image: url(./images/bg-intro-mobile.svg);
+        background-image: url(/images/bg-intro-mobile.svg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center 56%;
@@ -25,10 +27,6 @@
             min-height: 28.75rem;
         }
 
-        // &::before, &::after {
-        //     border: solid 2px greenyellow;
-        // }
-
         &::before {
             @include breakpoint-up(large){
                 width: 205%;
@@ -36,7 +34,7 @@
                 background-position: center 78%;
                 background-size: 112%;
                 content: "";
-                background-image: url(./images/bg-intro-desktop.svg);
+                background-image: url(/images/bg-intro-desktop.svg);
                 position: absolute;
                 background-repeat: no-repeat;
                 background-position: center 64%;
@@ -47,7 +45,7 @@
         }
         &::after {
             content: "";
-            background-image: url(./images/image-mockups.png);
+            background-image: url(/images/image-mockups.png);
             position: absolute;
             background-repeat: no-repeat;
             background-position: center bottom;
@@ -95,7 +93,8 @@
         }
         p {
             line-height: 1.5;
-            font-size: 1rem;
+            // font-size: 1.125rem;
+            font-size: 0.9375rem;
             margin-bottom: 2.1875rem;
 
             @include breakpoint-up(large) {

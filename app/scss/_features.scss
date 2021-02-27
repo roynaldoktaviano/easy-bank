@@ -1,14 +1,37 @@
-.features{
-    
-    background-color: $veryLightGray;
-    
-    @include breakpoint-up(large){
-        display: flex;
+    .intro {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 3.75rem;
+
+        @include breakpoint-up(large){
+            width: 60%;
+            text-align: left;
+            margin: 0;
+            
+        }
     }
     .feature {
-        flex: 1;
-        &-icon{
+        
+        
+        @include breakpoint-up(medium){
+            display: flex;
+            flex-wrap: wrap;
+        }
 
+        &-item {
+            padding: 0.9375rem;
+
+            @include breakpoint-up(medium){
+                flex: 0 0 50%;
+            }
+
+            @include breakpoint-up(large){
+                flex: 1;
+            }
+        }
+
+        &-icon{
+            
         }
         &-title{
 
@@ -17,4 +40,3 @@
             
         }
     }
-}

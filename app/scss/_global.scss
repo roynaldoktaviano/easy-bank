@@ -28,12 +28,28 @@ h1,h2,h3,h4 {
     line-height: 1.2;
 }
 
-h1,h2{
+h1{
     margin-bottom: 2.1875rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.4375;
+    @include breakpoint-up(large){
+        font-size: 2.15rem;
+        margin-bottom: 2.1875rem;
+    }
 }
 
 p {
     margin: 0px;
+    line-height: 1.5;
+    font-size: 0.9375rem;
+    margin-bottom: 2.1875rem;
+
+    @include breakpoint-up(large){
+        font-size: 1.075rem;
+    }
 }
 
 .container {

@@ -104,12 +104,33 @@ h1, h2, h3, h4 {
   line-height: 1.2;
 }
 
-h1, h2 {
+h1 {
   margin-bottom: 2.1875rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.4375;
+}
+
+@media (min-width: 64em) {
+  h2 {
+    font-size: 2.15rem;
+    margin-bottom: 2.1875rem;
+  }
 }
 
 p {
   margin: 0px;
+  line-height: 1.5;
+  font-size: 0.9375rem;
+  margin-bottom: 2.1875rem;
+}
+
+@media (min-width: 64em) {
+  p {
+    font-size: 1.075rem;
+  }
 }
 
 .container {
@@ -447,13 +468,57 @@ button:hover, .button:hover {
 
 .hero-text p {
   line-height: 1.5;
-  font-size: 1rem;
+  font-size: 0.9375rem;
   margin-bottom: 2.1875rem;
 }
 
 @media (min-width: 64em) {
   .hero-text p {
     font-size: 1.075rem;
+  }
+}
+
+.intro {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 3.75rem;
+}
+
+@media (min-width: 64em) {
+  .intro {
+    width: 60%;
+    text-align: left;
+    margin: 0;
+  }
+}
+
+@media (min-width: 40em) {
+  .feature {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.feature-item {
+  padding: 0.9375rem;
+}
+
+@media (min-width: 40em) {
+  .feature-item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 64em) {
+  .feature-item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */
