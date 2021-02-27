@@ -58,10 +58,18 @@ p {
 
     // Help Classes for container Padding
     &-pt {
-        padding-top: 2.656rem;
+        padding-top: 4.375rem;
+        
+        @include breakpoint-up(large){
+            padding-top: 6.25rem;
+        }
     }
     &-pb {
-        padding-bottom: 2.656rem;
+        padding-bottom: 4.375rem;
+
+        @include breakpoint-up(large){
+            padding-bottom: 6.25rem;
+        }
     }
     &-pl {
         padding-left: 1.5rem;
@@ -72,16 +80,27 @@ p {
     &-px {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
+        
     }
     &-py {
-        padding-top: 2.656rem;
-        padding-bottom: 2.656rem;
+        padding-top: 4.375rem;
+        padding-bottom: 4.375rem;
+
+        @include breakpoint-up(large){
+            padding-top: 6.25rem;
+            padding-bottom: 6.25rem;
+        }
     }
     &-pall {
-        padding-top: 2.656rem;
+        padding-top: 4.375rem;
         padding-left: 1.5rem;
-        padding-bottom: 2.656rem;
+        padding-bottom: 4.375rem;
         padding-right: 1.5rem;
+
+        @include breakpoint-up(large){
+            padding-top: 6.25rem;
+            padding-bottom: 6.25rem;
+        }
     }
     
 
