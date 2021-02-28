@@ -97,11 +97,10 @@ body.no-scroll {
   overflow: hidden;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   margin-top: 0px;
   font-weight: 300;
   color: #2d314d;
-  font-size: 2.5rem;
   line-height: 1.2;
 }
 
@@ -589,5 +588,100 @@ button:hover, .button:hover {
   .features .feature-description {
     text-align: left;
   }
+}
+
+.articles {
+  background-color: #fafafa;
+}
+
+.articles .article h2 {
+  text-align: center;
+}
+
+@media (min-width: 40em) {
+  .articles .article h2 {
+    text-align: left;
+  }
+}
+
+.articles .article-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 1.875rem;
+}
+
+@media (min-width: 40em) {
+  .articles .article-content {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 64em) {
+  .articles .article-content {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.articles .article-card {
+  -webkit-box-shadow: 1px 1px 2px 1px #eeeeee;
+          box-shadow: 1px 1px 2px 1px #eeeeee;
+  border-radius: 5px 5px 0 0;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.articles .article-card:hover {
+  -webkit-box-shadow: 1px 1px 2px 1px #e2e2e2;
+          box-shadow: 1px 1px 2px 1px #e2e2e2;
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
+}
+
+.articles .article-card:hover .title {
+  color: #31d35c;
+}
+
+.articles .article-image {
+  height: 11.5rem;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 64em) {
+  .articles .article-image {
+    height: 12.5rem;
+  }
+}
+
+.articles .article-text {
+  padding: 1.5625rem;
+  background-color: white;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.articles .article-text .author {
+  font-size: 0.5625rem;
+  margin-bottom: 0.9375rem;
+}
+
+.articles .article-text .title {
+  font-size: 1rem;
+  margin-bottom: 0.9375rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.articles .article-text .description {
+  font-size: 0.75rem;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=style.css.map */

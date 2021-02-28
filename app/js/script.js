@@ -4,6 +4,8 @@ const header = document.querySelector(".header");
 const overlay = document.querySelector(".overlay");
 const fadeElem = document.querySelectorAll(".fade-element");
 
+// SCSS Variabel
+
 hamburger.addEventListener("click", function(){
     if(header.classList.contains('open')){ // Close Hamburger
         header.classList.remove("open");
