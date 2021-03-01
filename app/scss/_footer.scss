@@ -81,6 +81,9 @@
 
             @include breakpoint-up(medium){
                 margin: 0;
+            }
+
+            @include breakpoint-up(large){
                 text-align: right;
             }
 
@@ -88,7 +91,7 @@
                 margin-top: 30px;
                 margin-bottom: 0;
                 font-size: 0.875rem;
-                justify-self: end;
+
             }
         }
 
