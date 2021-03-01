@@ -1,7 +1,7 @@
 html {
     font-size: 100%;
     box-sizing: border-box;
-    overflow-x: hidden ;
+    
 }
 
 *, *::before, *::after {
@@ -15,6 +15,7 @@ body {
     font-family: 'Public Sans', sans-serif;
     font-size: $font-md;
     color: $grayishBlue;
+    overflow-x: hidden ;
 
     &.no-scroll{
         overflow: hidden;
@@ -129,18 +130,32 @@ a, a:visited, a:hover {
 }
 
 button , .button {
+    position: relative;
     padding: 0.875rem 2.125rem;
-    border-radius: 50px;
+    border-radius: 3.125rem;
     border: none;
-    background: linear-gradient(to right, $limeGreen, $brightCyan);
+    background-image: linear-gradient(to right, $limeGreen, $brightCyan);
     cursor: pointer;
     font-weight: 700;
     font-size: $font-sm;
     color: white;
     transition: 0.15s ease-in-out;
 
-    &:hover {
-        opacity: 0.7;
+    &::before{
+        content: "";
+        border-radius: 3.125rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(255,255,255,0.25);
+        opacity: 0;
+        transition: opacity 0.2s ;
+    }
+
+    &:hover::before {
+        opacity: 1;
     }
     
 }

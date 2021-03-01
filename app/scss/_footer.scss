@@ -1,0 +1,99 @@
+.footer {
+    background-color: $darkBlue;
+    
+
+    &-content {
+        padding-top: 2.9375rem;
+        padding-bottom: 2.9375rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+
+        @include breakpoint-up(medium){
+            grid-template-columns: repeat(4,1fr);  
+            text-align: left;
+        }
+        
+        @include breakpoint-up(large) {
+            grid-template-columns: 2fr 1fr 1fr 3fr;
+            text-align: left;
+        }
+    }
+
+    &-item {
+        .logo {
+            img {
+                height: 1.375rem;
+            }
+        }
+
+        .socmed-logo{
+            margin-top: 1.875rem;
+            margin-bottom: 1.875rem;
+
+            @include breakpoint-up(large){
+                margin-top: 3.4375rem;
+            }
+            .icon {
+                &:not(:last-child){
+                    margin-right: 0.75rem;
+                }
+                
+                svg path {
+                    transition: fill 0.2s ease-in-out;
+                }
+
+                &:hover svg path {
+                    fill: $limeGreen;
+                }
+            }
+        }
+
+        .text-link {
+            padding: 5px;
+            line-height: 1.3;
+            text-align: center;
+            a {
+                width: fit-content;
+                color: $veryLightGray;
+                font-size: 0.875rem;
+                display: block;
+                margin: 0 auto;
+                transition: 0.2s ease-in-out;
+                @include breakpoint-up(large){
+                    margin: 0;
+                }
+
+                &:not(:last-child){
+                    margin-bottom: 1.25rem;
+                    
+                }
+
+                &:hover {
+                    color: $limeGreen;
+                }
+            }
+        }
+
+        &:last-child {
+            margin-top: 1.875rem;
+            text-align: center;
+
+            @include breakpoint-up(medium){
+                margin: 0;
+                text-align: right;
+            }
+
+            .copyright {
+                margin-top: 30px;
+                margin-bottom: 0;
+                font-size: 0.875rem;
+                justify-self: end;
+            }
+        }
+
+        .footer-cta {
+            
+        }
+    }
+}

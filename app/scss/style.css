@@ -76,7 +76,6 @@ html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 *, *::before, *::after {
@@ -91,6 +90,7 @@ body {
   font-family: 'Public Sans', sans-serif;
   font-size: 1.125rem;
   color: #9698a6;
+  overflow-x: hidden;
 }
 
 body.no-scroll {
@@ -227,11 +227,12 @@ a, a:visited, a:hover {
 }
 
 button, .button {
+  position: relative;
   padding: 0.875rem 2.125rem;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   border: none;
-  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
-  background: linear-gradient(to right, #31d35c, #2bb7da);
+  background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background-image: linear-gradient(to right, #31d35c, #2bb7da);
   cursor: pointer;
   font-weight: 700;
   font-size: 0.875rem;
@@ -240,8 +241,22 @@ button, .button {
   transition: 0.15s ease-in-out;
 }
 
-button:hover, .button:hover {
-  opacity: 0.7;
+button::before, .button::before {
+  content: "";
+  border-radius: 3.125rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.25);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+button:hover::before, .button:hover::before {
+  opacity: 1;
 }
 
 @media (max-width: 63.9375em) {
@@ -683,5 +698,115 @@ button:hover, .button:hover {
 .articles .article-text .description {
   font-size: 0.75rem;
   line-height: 1.5;
+}
+
+.footer {
+  background-color: #2d314d;
+}
+
+.footer-content {
+  padding-top: 2.9375rem;
+  padding-bottom: 2.9375rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  text-align: center;
+}
+
+@media (min-width: 40em) {
+  .footer-content {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    text-align: left;
+  }
+}
+
+@media (min-width: 64em) {
+  .footer-content {
+    -ms-grid-columns: 2fr 1fr 1fr 3fr;
+        grid-template-columns: 2fr 1fr 1fr 3fr;
+    text-align: left;
+  }
+}
+
+.footer-item .logo img {
+  height: 1.375rem;
+}
+
+.footer-item .socmed-logo {
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem;
+}
+
+@media (min-width: 64em) {
+  .footer-item .socmed-logo {
+    margin-top: 3.4375rem;
+  }
+}
+
+.footer-item .socmed-logo .icon:not(:last-child) {
+  margin-right: 0.75rem;
+}
+
+.footer-item .socmed-logo .icon svg path {
+  -webkit-transition: fill 0.2s ease-in-out;
+  transition: fill 0.2s ease-in-out;
+}
+
+.footer-item .socmed-logo .icon:hover svg path {
+  fill: #31d35c;
+}
+
+.footer-item .text-link {
+  padding: 5px;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.footer-item .text-link a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fafafa;
+  font-size: 0.875rem;
+  display: block;
+  margin: 0 auto;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+@media (min-width: 64em) {
+  .footer-item .text-link a {
+    margin: 0;
+  }
+}
+
+.footer-item .text-link a:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+
+.footer-item .text-link a:hover {
+  color: #31d35c;
+}
+
+.footer-item:last-child {
+  margin-top: 1.875rem;
+  text-align: center;
+}
+
+@media (min-width: 40em) {
+  .footer-item:last-child {
+    margin: 0;
+    text-align: right;
+  }
+}
+
+.footer-item:last-child .copyright {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 0.875rem;
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 /*# sourceMappingURL=style.css.map */
